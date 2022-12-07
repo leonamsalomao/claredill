@@ -13,10 +13,8 @@ function onScroll() {
   activateMenuAtCurrentSection()
 }
 
-function activateMenuAtCurrentSection(){
+function activateMenuAtCurrentSection() {
   const targetLine = scrollY + innerHeight / 2
-  
-  
 }
 
 function showNavOnScroll() {
@@ -54,4 +52,3 @@ ScrollReveal({
 }).reveal(
   '#home, #home Image, #home .stats, #services, #services header, #services .card, #about, #about header, #about .content'
 )
-
