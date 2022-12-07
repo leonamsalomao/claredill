@@ -513,6 +513,10 @@ footer .wrapper #socialLinks li a{
   stroke: var(--primary-color);
 }
 
+footer span{
+  font-size: 1.2rem;
+}
+
 /* Responsividade */
 @media (min-width: 1024px) {
   /* Geral */
