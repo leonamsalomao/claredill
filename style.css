@@ -60,7 +60,7 @@ img{
   max-width: 100%;
 }
 
-#produto,
+#product,
 #about,
 #contact{
   padding-block: 10rem;
@@ -367,17 +367,17 @@ body.menu-expanded button path{
 }
 
 /* Services */
-#produto header h2{
+#product header h2{
   margin-bottom: 6rem;
 }
 
-#produto .cards{
+#product .cards{
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
 }
 
-#produto .card{
+#product .card{
   padding: 2.4rem;
   text-align: left;
 
@@ -388,11 +388,11 @@ body.menu-expanded button path{
 
 }
 
-#produto .card h3{
+#product .card h3{
   margin-block: 1.6rem;
 }
 
-#produto .wrapper img{
+#product .wrapper img{
   width: 30rem;
   padding-bottom: 5rem;
 }
@@ -716,18 +716,18 @@ footer .wrapper #socialLinks li a{
 
   /* Produto */
 
-  #produto h2{
+  #product h2{
     width: 47rem;
     margin-inline: auto;
   }
 
-  #produto .cards{
+  #product .cards{
     flex-direction: row;
     flex-wrap: wrap;
     gap: 4rem;
   }
 
-  #produto .card{
+  #product .card{
     width: 30%;
     flex-grow: 1;
   }
