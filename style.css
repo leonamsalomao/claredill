@@ -265,13 +265,15 @@ body.menu-expanded .menu{
   padding: 1.6rem 3.2rem;
   margin-top: 4.8rem;
   margin-bottom: 8rem;
+
+  border: 2px solid var(--primary-color);
 }
 
 .menu .button:hover{
   background-color: var(--primary-color);
   color: white;
-  filter: brightness(1.1);
   transition: 300ms;
+  border:2px solid #FFFFFF;
 }
 
 body.menu-expanded .logo,
@@ -347,11 +349,11 @@ body.menu-expanded button path{
 }
 
 #home .stat h3{
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--headline);
   line-height: 130%;
 
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   width: 25rem;
 }
 
@@ -359,8 +361,9 @@ body.menu-expanded button path{
   margin: 0;
   color: var(--primary-color);
   line-height: 150%;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   width: 25rem;
+  text-align: justify;
 }
 
 /* Services */
@@ -430,6 +433,10 @@ body.menu-expanded button path{
   display: flex;
   align-items: center;
   gap: 0.8rem;
+}
+
+#contact img{
+  border-radius: 1rem;
 }
 
 /* Footer */
@@ -518,7 +525,15 @@ footer .wrapper #socialLinks li a{
     display: grid;
   }
 
-  section h2{
+  .col-a{
+    grid-area: A;
+  }
+
+  .col-b{
+    grid-area: B;
+  }
+
+  section header h2{
     font-size: 4rem;
     line-height: 5.2rem;
   }
@@ -662,10 +677,6 @@ footer .wrapper #socialLinks li a{
     align-self: center;
   }
 
-  #home .col-b{
-    grid-area: B;
-  }
-
   #home h1{
     font-size: 5.2rem;
   }
@@ -723,4 +734,58 @@ footer .wrapper #socialLinks li a{
 
   /* Sobre */
 
+  #about .wrapper{
+    grid-template-columns:48rem 1fr;
+    grid-template-areas: 'B A';
+    gap: 6.7rem;
+  }
+
+  #about .col-a{
+    align-self: center;
+  }
+
+  #about .content p{
+    margin-bottom: 0;
+  }
+
+  /* Contato */
+
+  #contact .wrapper{
+    grid-template-areas: 'A B';
+    grid-template-columns: 1fr 57.5rem;
+
+  }
+
+  #contact .col-b{
+    justify-self: flex-end;
+    width: 37rem;
+  }
+
+  #contact h2{
+    width: 42rem;
+  }
+
+  /* Footer */
+
+  footer{
+    padding-block: 5rem;
+  }
+  
+  footer .wrapper{
+    grid-template-areas: 'A B';
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer .col-a{
+    align-self: center;
+  }
+
+  footer .col-b{
+    align-self: center;
+    justify-self: flex-end;
+  }
+
+  footer p{
+    margin-bottom: 0;
+  }
 }
